@@ -15,15 +15,15 @@ class ShopListBH:
         elif self.__foodName == "Kopi Luwak Cofee":
             self.__foodPrice = 306.50
         elif self.__foodName == 'Moose Cheese':
-            self.__FoodPrice = 487.20
+            self.__foodPrice = 487.20
         elif self.__foodName == 'White Truffles':
-            self.__FoodPrice = 3600.00
+            self.__foodPrice = 3600.00
         elif self.__foodName == 'Blue Fin Tuna':
-            self.__FoodPrice = 3603.30
+            self.__foodPrice = 3603.30
         elif self.__foodName == 'Le Bonnotte Potatoes':
-            self.__FoodPrice = 270.81
+            self.__foodPrice = 270.81
         else:
-            self.__FoodPrice = 0.00
+            self.__foodPrice = 0.00
 
         return self.__foodPrice
 
