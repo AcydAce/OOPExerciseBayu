@@ -1,10 +1,12 @@
 class theShopList:
-    def __init__(self, foodName, foodAmount):
-        self.__foodName = foodName
-        self.__foodAmount = foodAmount
-        self.__foodPrice = self.__Price()
-        self.__calculator = self.calcshoplist()
+    # initializer method
+    def __init__(self, foodName, foodAmount): # 2 parameters
+        self.__foodName = foodName                      #
+        self.__foodAmount = foodAmount                  #
+        self.__foodPrice = self.__Price()               # Attributes
+        self.__calculator = self.calcshoplist()         #
 
+    # private method stores list
     def __Price(self):
         if self.__foodName == "Dry Cured Iberian Ham":
             self.__foodPrice = 177.80
@@ -27,18 +29,20 @@ class theShopList:
 
         return self.__foodPrice
 
+    # public method calculates
     def calcshoplist(self):
         self.__calculator = self.__foodAmount * self.__foodPrice
         return (self.__calculator)
 
-    def getName(self):
+    #accessors
+    def getNameBH(self):
         return self.__foodName
 
-    def getPrice(self):
+    def getPriceBH(self):
         return self.__foodPrice
 
-    def getAmount(self):
+    def getAmountBH(self):
         return self.__foodAmount
 
-    def getcalc(self):
+    def getCalcBH(self):
         return self.__calculator

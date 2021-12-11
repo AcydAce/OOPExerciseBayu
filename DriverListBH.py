@@ -1,6 +1,6 @@
 from ShopListBH import theShopList
 
-def ShopListloop
+def ShopListloop():
     li = []
     count = 0
 
@@ -10,7 +10,7 @@ def ShopListloop
             print("item bought must be atleast 1")
 
     for i in range(count):
-        print(f"item #{i + 1}-")
+        print(f"item number {i + 1}:")
         food_name = str(input("insert food name: "))
         food_amount = 0
         while food_amount <= 0:
@@ -28,12 +28,12 @@ def ShowList(resultlist):
         print(f"Item: {theShopList.getNameBH()}")
         print(f"Amount ordered in pounds: {theShopList.getAmountBH():.1f}")
         print(f"Price per pound: ${theShopList.getPriceBH():.2f}")
-        print(f"Price of order: ${theShopList.getcountBH():.2f}")
+        print(f"Price of order: ${theShopList.getCalcBH():.2f}")
 
 def TotalList(thelist):
     total = 0
     for i in thelist:
-        total = i.getcountBH() + total
+        total = i.getCalcBH() + total
     print("Here is your bill : ${:.2f}.".format(total), "Thankyou you for purchasing")
 
 def main():
