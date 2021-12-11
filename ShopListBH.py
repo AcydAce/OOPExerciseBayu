@@ -1,4 +1,4 @@
-class ShopList
+class ShopListBH:
     def __init__(self, foodName, foodAmount):
         self.__foodName = foodName
         self.__foodAmount = foodAmount
@@ -14,13 +14,13 @@ class ShopList
             self.__foodPrice = 272.00
         elif self.__foodName == "Kopi Luwak Cofee":
             self.__foodPrice = 306.50
-        elif self.__FoodName == 'Moose Cheese':
+        elif self.__foodName == 'Moose Cheese':
             self.__FoodPrice = 487.20
-        elif self.__FoodName == 'White Truffles':
+        elif self.__foodName == 'White Truffles':
             self.__FoodPrice = 3600.00
-        elif self.__FoodName == 'Blue Fin Tuna':
+        elif self.__foodName == 'Blue Fin Tuna':
             self.__FoodPrice = 3603.30
-        elif self.__FoodName == 'Le Bonnotte Potatoes':
+        elif self.__foodName == 'Le Bonnotte Potatoes':
             self.__FoodPrice = 270.81
         else:
             self.__FoodPrice = 0.00
@@ -28,4 +28,17 @@ class ShopList
         return self.__foodPrice
 
     def calcshoplist(self):
-        self.calculator = self.__foodAmount * self.__foodPrice
+        self.__calculator = self.__foodAmount * self.__foodPrice
+        return (self.__calculator)
+
+    def getName(self):
+        return self.__foodName
+
+    def getPrice(self):
+        return self.__foodPrice
+
+    def getAmount(self):
+        return self.__foodAmount
+
+    def getcalc(self):
+        return self.__calculator
