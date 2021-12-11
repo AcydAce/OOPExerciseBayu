@@ -1,4 +1,4 @@
-class ShopListBH:
+class theShopList:
     def __init__(self, foodName, foodAmount):
         self.__foodName = foodName
         self.__foodAmount = foodAmount
